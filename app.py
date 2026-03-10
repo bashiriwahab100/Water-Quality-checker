@@ -28,9 +28,6 @@ hide_github_fork = """
 """
 st.markdown(hide_github_fork, unsafe_allow_html=True)
 
-# Rest of your app code...
-st.title("💧 AquaCheck Assessment Portal")
-
 # 1. Robust File Loading
 # This ensures the script finds database.json regardless of where it's hosted
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -116,5 +113,6 @@ if st.session_state.batch:
                 st.success(f"**Required Solution:** {row['Action']}")
 else:
     st.info("The batch is currently empty. Use the sidebar to add laboratory results.")
+
 
 
